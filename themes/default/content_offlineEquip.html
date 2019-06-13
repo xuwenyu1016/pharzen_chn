@@ -1,0 +1,60 @@
+<!--#include file="header.html"-->
+
+<img src="/assets/image/81.png" class="am-img-responsive am-center" alt="{$categoryInfo.name}" />
+
+<div class="epc-content am-padding-top-xl stand-alone">
+    <div class="am-container" id='main'>
+        <p class="am-margin-vertical-sm am-text-sm am-link-muted"><a href="__ROOT__/">首页</a><!--foreach{$crumb as $vo}-->&gt;<a href="{$vo.url}">{$vo.name}</a><!--{/foreach}--></p>
+
+        <div class="title-block">
+            <p><span>stand-alone equipment</span><span>单机设备</span></p>
+        </div>
+
+        <ul class="epc-nav am-avg-sm-3 am-margin-top-lg">
+            <!--list{app="DuxCms" label="contentList" class_id=10 limit="10" order="time asc" }-->
+            <li>
+                <!--if{ $contentInfo['title'] ==  $list['title']  }-->
+                <a href="{$list.aurl}#main" class="active">{$list.title}</a>
+                <!--{else}-->
+                <a href="{$list.aurl}#main">{$list.title}</a>
+                <!--{/if}-->
+            </li>
+            <!--{/list}-->
+        </ul>
+
+        <section class="epc-specific am-padding-top-xl">
+            <div>
+                <img src="{$contentInfo.image}" alt="{$contentInfo.title}" class="am-img-responsive" />
+            </div>
+
+            <div>
+                <p>{$contentInfo.title}</p>
+                <article>
+                    <!--<p>{$contentInfo.focus}</p>-->
+                    <!--<p>（{$contentInfo.blueFont}）</p>-->
+                    <p>{$contentInfo.content}</p>
+                </article>
+            </div>
+        </section>
+
+        <!--<div data-am-widget="tabs" class="am-tabs am-tabs-default">-->
+            <!--<ul class="am-tabs-nav am-cf">-->
+                <!--<li class="am-active"><a href="[data-tab-panel-0]">相关案例</a></li>-->
+                <!--&lt;!&ndash;<li class=""><a href="[data-tab-panel-1]">技术描述</a></li>&ndash;&gt;-->
+            <!--</ul>-->
+            <!--<div class="am-tabs-bd">-->
+                <!--<div data-tab-panel-0 class="am-tab-panel am-active">-->
+                    <!--<p class="am-margin-vertical-sm">{$contentInfo.skillDetails}</p>-->
+                    <!--&lt;!&ndash;<img class="am-img-responsive am-center" src="{$contentInfo.papers}" alt="方案图纸" />&ndash;&gt;-->
+                <!--</div>-->
+                <!--&lt;!&ndash;<div data-tab-panel-1 class="am-tab-panel ">&ndash;&gt;-->
+                <!--&lt;!&ndash;<p class="am-margin-vertical-sm">{$contentInfo.skillDetails}</p>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+
+    <img src="/assets/image/4.png" class="am-img-responsive am-center bottom-image" alt="{$categoryInfo.name}">
+</div>
+
+<!--#include file="footer.html"-->

@@ -1,0 +1,91 @@
+<?php exit;?>0015913346614798d0719826c16a3ece7a9c82d4a0a4s:6516:"a:2:{s:8:"template";s:6452:"<?php $__Template->display("themes/mobile/header"); ?>
+
+<img src="/assets/image/91.png" class="am-img-responsive am-center" alt="<?php echo $categoryInfo["name"];?>" />
+
+<div class="firm-intro am-padding-horizontal-sm am-padding-bottom-sm">
+
+    <p class="am-margin-vertical-sm am-text-xs am-link-muted"><a href="/">首页</a><?php foreach ($crumb as $vo) { ?>&gt;<a href="<?php echo $vo["url"];?>"><?php echo $vo["name"];?></a><?php } ?></p>
+
+    <h2 class="list-title">公司简介</h2>
+
+    <p class="am-margin-vertical-sm">&emsp;&emsp;在制药行业，现阶段的药品生产线在生产效率方面、质量收率方面、生产过程控制方面、 自动化方面、安全方面、环保方面、职业健康方面，都有非常大的优化改善、升级换代的空间和越来越现实、迫切的需求。这种需求，不只是药企自身为了生存、利润和竞争力的内在要求，同时也是行业发展和社会发展的必然要求。</p>
+
+    <p class="am-margin-vertical-sm">&emsp;&emsp;在国内外制药行业内，新药创新、药品监管、制药设备等领域的投入和发展颇见规模；然而，对药品生产线的系统性开发、创新、集成和升级，却鲜有深究。只有精通制药工艺技术、生产技术、工程技术、设备技术、控制技术、法规规范等专业技术要求，才能为药企和科研机构提供专业并高度匹配客户需求的工程技术解决方案。</p>
+
+    <p class="am-margin-vertical-sm">&emsp;&emsp;法尔森科技（上海）有限公司总部位于上海，由国内外专家和工程师团队联合创立，拥有雄厚的资金实力。法尔森是一家以先进科技和系统装备为核心的工程技术型企业，专业从事原料药建设项目的EPC工程总包、系统装备开发和模块化集成、技术咨询和项目管理、概念设计和方案设计。</p>
+
+    <p class="am-margin-vertical-sm">&emsp;&emsp;凭借专业实力及业内口碑，创始团队自公司成立之前至今已陆续为俄罗斯Pharmasyntez制药公司、康正康元药业、威尔曼制药、昆药集团等多家知名企业提供技术咨询和工程服务。</p>
+
+    <h2 class="list-title">管理团队</h2>
+
+    <article>
+        <p>陆先生</p>
+        <p>公司首席专家顾问 总工</p>
+        <p>高级工程师、执业药师、CFDA特聘专家讲师</p>
+        <p>原上药集团先锋制药厂厂长、原上药集团抗生素事业部生产制造中心总经理</p>
+    </article>
+
+    <article>
+        <p>刘鹏</p>
+        <p>公司总经理&emsp;国家一级建造师&emsp;制药工艺工程师</p>
+        <p>投身制药行业十余年，先后供职于中国知名的制药公司、设计院、工程装备公司，历任制药项目的筹备设计、工程设备、中试生产、验证审计等工作职务，擅长制药项目全建设周期管理，擅长制药工艺系统的技术改进和现代化升级；为中国、俄罗斯、印度等国内外数十家制药和精细化工企业项目提供支持和服务。</p>
+    </article>
+
+    <article>
+        <p>孙奇</p>
+        <p>公司高级技术经理&emsp;装备研发设计工程师&emsp;意大利/德国机械装备研修学者</p>
+        <p>从事机械设计及设备制造行业多年，先后供职于国际知名的工程机械制造企业及国内大型制药设备企业。主导过多套设备的研发工作并投入生产，有着丰富的机械结构设计及设备研发经验；多次担任系统项目负责人并完成现场交付，有着丰富的系统项目管理经验。有着丰富的欧企合作经验，为中国、意大利、印度等国内外数十家制药和精细化工企业提供技术支持和服务。</p>
+    </article>
+
+    <article>
+        <p>朱家伍</p>
+        <p>公司高级工程经理&emsp;EHS专家</p>
+        <p>二十年制药行业从业经验，曾负责精细化工产品合成、制药厂设备及技术管理工作，自2010年起先后在华海、九洲、东富龙等国内知名企业担任新建药厂项目经理等职务，精通制药项目行政报批及项目建设管理，擅长生产设备选型、工艺工程方案设计、公用工程方案设计、溶剂回收处理和废气处理，精通规范、GMP等行业法规。</p>
+    </article>
+
+    <article>
+        <p>杨先生</p>
+        <p>公司GMP总监&emsp;高级工程师&emsp;制药生产和法规专家</p>
+        <p>二十五年制药公司生产和法规管理经验。</p>
+    </article>
+
+    <article>
+        <p>李云</p>
+        <p>验证经理&emsp;QC工程师&emsp;执业中（西）药师</p>
+        <p>十余年的验证和QC文件编写、项目管理及主导验证工作阅历，具有丰富的验证经验、质量体系经验，擅长制药行业的文件体系建设、验证管理工作。</p>
+    </article>
+
+    <article class="am-padding-bottom-xs">
+        <p>刘先生，公司全球战略总监，投资家。</p>
+    </article>
+
+    <h2 class="list-title">企业文化</h2>
+
+    <p class="am-margin-vertical-sm">企业精神：专业、敬业、廉洁、幸福</p>
+    <p class="am-margin-vertical-sm">企业使命：服务于全球制药企业，为生命健康保驾护航</p>
+    <p class="am-margin-vertical-sm">发展理念：解放思想，主动作为，脚踏实地，大胆创业</p>
+    <p class="am-margin-vertical-sm">核心价值观：开发专业技术，创造优质产品，交付完美项目</p>
+
+    <h2 class="list-title am-margin-bottom-0">荣誉资质</h2>
+
+    <img src="/assets/image/97.jpg" class="am-img-responsive am-center am-margin-bottom-sm" alt="<?php echo $categoryInfo["name"];?>" />
+
+
+    <h2 class="list-title">联系我们</h2>
+
+    <ul class="am-avg-sm-2 am-margin-vertical-sm">
+        <li><p>LOOKING FORWARD TO COORPERATE WITH YOU</p></li>
+        <li>
+            <p class="am-margin-vertical-xs">网址：<a href="http://www.pharzen.com">www.pharzen.com</a></p>
+            <p class="am-margin-vertical-xs">邮箱：<a href="mailto:pharzen@pharzen.com">pharzen@pharzen.com</a></p>
+            <p class="am-margin-vertical-xs">电话：<a href="tel:021-52217320">021-52217320</a></p>
+            <p class="am-margin-vertical-xs">QQ：1722525793</p>
+            <p class="am-margin-vertical-xs">地址：上海市闵行区沧源路1200号</p>
+        </li>
+    </ul>
+
+    <div id="map"></div>
+
+</div>
+
+<?php $__Template->display("themes/mobile/footer"); ?>";s:12:"compile_time";i:1559798661;}";

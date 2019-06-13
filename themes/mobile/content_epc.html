@@ -1,0 +1,78 @@
+<!--#include file="header.html"-->
+
+<img src="/assets/image/90.png" class="am-img-responsive am-center" alt="{$contentInfo.title}" />
+
+<div class="epc am-padding-bottom-sm">
+    <p class="am-margin-vertical-sm am-text-xs am-link-muted am-padding-horizontal-sm"><a href="__ROOT__/">首页</a><!--foreach{$crumb as $vo}-->&gt;<a href="{$vo.url}">{$vo.name}</a><!--{/foreach}--></p>
+
+    <section data-am-widget="accordion" class="am-accordion am-accordion-default" data-am-accordion='{ "multiple": true }'>
+        <!--list{app="Article" label="contentList" class_id=2 expand_id=3 sub=true limit=15 order="time asc"  }-->
+        <!--if{ $contentInfo['title'] ==  $list['title']   }-->
+        <dl class="am-accordion-item am-active">
+            <dt class="am-accordion-title"><a href="{$list.aurl}">{$list.title} <span class="plus">+</span><span class="minus">-</span></a></dt>
+            <dd class="am-accordion-content am-collapse am-in">
+                <ul class="am-avg-sm-2">
+                    <li>
+                        <div data-am-widget="slider" class="am-slider am-slider-c2" data-am-slider='{"directionNav":false}'>
+                            <ul class="am-slides">
+                                <?php foreach($contentInfo.productImgSlide as $val): ?>
+                                <li>
+                                    <img class="am-img-responsive" src="<?php echo $val['url']?>" alt="<?php echo $val['title']?>" />
+                                </li>
+                                <?php endforeach;?>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <p>{$list.focus}</p>
+                        <p>（{$list.blueFont}）</p>
+                    </li>
+                </ul>
+
+                <div class="am-text-xs am-margin-top-xs">{$list.content}</div>
+
+                <h2 class="am-text-sm am-margin-vertical-xs list-title am-text-center">方案图纸</h2>
+
+                <article class="img-gallery">
+                    <!--if{ $contentInfo['papers'] }-->
+                    <?php foreach($contentInfo.papers as $val): ?>
+                    <img class="am-img-responsive am-center" src="<?php echo $val['url']?>" alt="<?php echo $val['title']?>" />
+                    <?php endforeach;?>
+                    <!--{else}-->
+                    <img class="am-img-responsive am-center" src="/assets/image/95.png" alt="内容更新中" />
+                    <!--{/if}-->
+                </article>
+            </dd>
+        </dl>
+        <!--{else}-->
+        <dl class="am-accordion-item">
+            <dt class="am-accordion-title"><a href="{$list.aurl}">{$list.title} <span class="plus">+</span><span class="minus">-</span></a></dt>
+            <dd class="am-accordion-content am-collapse ">
+                <ul class="am-avg-sm-2">
+                    <li><img src="{$list.image}" alt="{$contentInfo.title}" class="am-img-responsive" /></li>
+                    <li>
+                        <p>{$list.focus}</p>
+                        <p>（{$list.blueFont}）</p>
+                    </li>
+                </ul>
+
+                <div class="am-text-xs am-margin-top-xs">{$list.content}</div>
+
+                <h2 class="am-text-sm am-margin-vertical-xs list-title am-text-center">方案图纸</h2>
+
+                <article class="img-gallery">
+                    <?php foreach($list.papers as $val): ?>
+
+                    <img class="am-img-responsive am-center am-margin-bottom-sm" src="<?php echo $val['url']?>" alt="<?php echo $val['title']?>" />
+
+                    <?php endforeach;?>
+                </article>
+            </dd>
+        </dl>
+        <!--{/if}-->
+        <!--{/list}-->
+    </section>
+
+</div>
+
+<!--#include file="footer.html"-->

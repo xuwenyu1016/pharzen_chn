@@ -1,0 +1,28 @@
+<?php exit;?>00159126641856c2ed978a943bba0607809c10585e50s:2510:"a:2:{s:8:"template";s:2446:"<?php $__Template->display("themes/default/header"); ?>
+
+<img src="/assets/image/71.png" class="am-img-responsive am-center" alt="<?php echo $categoryInfo["name"];?>" />
+
+<div class="firm-intro am-padding-top-xl">
+    <div class="am-container">
+        <p class="am-margin-vertical-sm am-text-sm am-link-muted"><a href="/">首页</a><?php foreach ($crumb as $vo) { ?>&gt;<a href="<?php echo $vo["url"];?>"><?php echo $vo["name"];?></a><?php } ?></p>
+
+        <div class="title-block">
+            <p><span>company profile</span><span>公司简介</span></p>
+        </div>
+
+        <article>
+            <h2>公司简介</h2>
+
+            <p>&emsp;&emsp;在制药行业，现阶段的药品生产线在生产效率方面、质量收率方面、生产过程控制方面、 自动化方面、安全方面、环保方面、职业健康方面，都有非常大的优化改善、升级换代的空间和越来越现实、迫切的需求。这种需求，不只是药企自身为了生存、利润和竞争力的内在要求，同时也是行业发展和社会发展的必然要求。</p>
+
+            <p>&emsp;&emsp;在国内外制药行业内，新药创新、药品监管、制药设备等领域的投入和发展颇见规模；然而，对药品生产线的系统性开发、创新、集成和升级，却鲜有深究。只有精通制药工艺技术、生产技术、工程技术、设备技术、控制技术、法规规范等专业技术要求，才能为药企和科研机构提供专业并高度匹配客户需求的工程技术解决方案。</p>
+
+            <p>&emsp;&emsp;法尔森科技（上海）有限公司总部位于上海，由国内外专家和工程师团队联合创立，拥有雄厚的资金实力。法尔森是一家以先进科技和系统装备为核心的工程技术型企业，专业从事原料药建设项目的EPC工程总包、系统装备开发和模块化集成、技术咨询和项目管理、概念设计和方案设计。</p>
+            <p>&emsp;&emsp;凭借专业实力及业内口碑，创始团队自公司成立之前至今已陆续为俄罗斯Pharmasyntez制药公司、康正康元药业、威尔曼制药、昆药集团等多家知名企业提供技术咨询和工程服务。</p>
+        </article>
+
+    </div>
+    <img src="/assets/image/4.png" class="am-img-responsive am-center bottom-image" alt="<?php echo $categoryInfo["name"];?>">
+</div>
+
+<?php $__Template->display("themes/default/footer"); ?>";s:12:"compile_time";i:1559730418;}";

@@ -1,0 +1,63 @@
+<?php exit;?>0015911761992c48f403d274a9f22e6d96fc00a90ae9s:3897:"a:2:{s:8:"template";s:3833:"<?php $__Template->display("themes/default/header"); ?>
+
+<img src="/assets/image/71.png" class="am-img-responsive am-center" alt="<?php echo $categoryInfo["name"];?>" />
+
+<div class="firm-intro am-padding-top-xl management">
+    <div class="am-container">
+        <p class="am-margin-vertical-sm am-text-sm am-link-muted"><a href="/">首页</a><?php foreach ($crumb as $vo) { ?>&gt;<a href="<?php echo $vo["url"];?>"><?php echo $vo["name"];?></a><?php } ?></p>
+
+        <div class="title-block">
+            <p><span>management team</span><span>管理团队</span></p>
+        </div>
+
+        <article class="management-team">
+            <h2>管理团队</h2>
+
+            <div>
+                <p>陆先生</p>
+                <p>公司首席专家顾问 总工</p>
+                <p>高级工程师、执业药师、CFDA特聘专家讲师</p>
+                <p>原上药集团先锋制药厂厂长、原上药集团抗生素事业部生产制造中心总经理</p>
+            </div>
+
+            <div>
+                <p>刘鹏</p>
+                <p>公司总经理&emsp;国家一级建造师&emsp;制药工艺工程师</p>
+                <p>投身制药行业十余年，先后供职于中国知名的制药公司、设计院、工程装备公司，历任制药项目的筹备设计、工程设备、中试生产、验证审计等工作职务，擅长制药项目全建设周期管理，擅长制药工艺系统的技术改进和现代化升级；为中国、俄罗斯、印度等国内外数十家制药和精细化工企业项目提供支持和服务。</p>
+            </div>
+
+            <div>
+                <p>孙奇</p>
+                <p>公司高级技术经理&emsp;装备研发设计工程师&emsp;意大利/德国机械装备研修学者</p>
+                <p>从事机械设计及设备制造行业多年，先后供职于国际知名的工程机械制造企业及国内大型制药设备企业。主导过多套设备的研发工作并投入生产，有着丰富的机械结构设计及设备研发经验；多次担任系统项目负责人并完成现场交付，有着丰富的系统项目管理经验。有着丰富的欧企合作经验，为中国、意大利、印度等国内外数十家制药和精细化工企业提供技术支持和服务。</p>
+            </div>
+
+            <div>
+                <p>朱家伍</p>
+                <p>公司高级工程经理&emsp;EHS专家</p>
+                <p>二十年制药行业从业经验，曾负责精细化工产品合成、制药厂设备及技术管理工作，自2010年起先后在华海、九洲、东富龙等国内知名企业担任新建药厂项目经理等职务，精通制药项目行政报批及项目建设管理，擅长生产设备选型、工艺工程方案设计、公用工程方案设计、溶剂回收处理和废气处理，精通规范、GMP等行业法规。</p>
+            </div>
+
+            <div>
+                <p>杨先生</p>
+                <p>公司GMP总监&emsp;高级工程师&emsp;制药生产和法规专家</p>
+                <p>二十五年制药公司生产和法规管理经验。</p>
+            </div>
+
+            <div>
+                <p>李云</p>
+                <p>验证经理&emsp;QC工程师&emsp;执业中（西）药师</p>
+                <p>十余年的验证和QC文件编写、项目管理及主导验证工作阅历，具有丰富的验证经验、质量体系经验，擅长制药行业的文件体系建设、验证管理工作。</p>
+            </div>
+
+            <div>
+                <p>刘先生，公司全球战略总监，投资家。</p>
+            </div>
+
+        </article>
+
+    </div>
+    <img src="/assets/image/4.png" class="am-img-responsive am-center bottom-image" alt="<?php echo $categoryInfo["name"];?>">
+</div>
+
+<?php $__Template->display("themes/default/footer"); ?>";s:12:"compile_time";i:1559640199;}";

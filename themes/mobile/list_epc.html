@@ -1,0 +1,30 @@
+<!--#include file="header.html"-->
+
+<img src="/assets/image/90.png" class="am-img-responsive am-center" alt="{$categoryInfo.name}" />
+
+<div class="epc am-padding-bottom-sm">
+    <p class="am-margin-vertical-sm am-text-xs am-link-muted am-padding-horizontal-sm"><a href="__ROOT__/">首页</a><!--foreach{$crumb as $vo}-->&gt;<a href="{$vo.url}">{$vo.name}</a><!--{/foreach}--></p>
+
+    <section data-am-widget="accordion" class="am-accordion am-accordion-default" data-am-accordion='{ "multiple": true }'>
+        <!--foreach{$pageList as $vo}-->
+        <dl class="am-accordion-item">
+            <dt class="am-accordion-title">{$vo.title} <span class="plus">+</span><span class="minus">-</span></dt>
+            <dd class="am-accordion-content am-collapse ">
+                <ul class="am-avg-sm-2">
+                    <li><img src="{$vo.image}" alt="{$contentInfo.title}" class="am-img-responsive" /></li>
+                    <li>
+                        <p>{$vo.focus}</p>
+                        <p>（{$vo.blueFont}）</p>
+                    </li>
+                </ul>
+
+                <div class="am-text-xs am-margin-top-xs">{$vo.content}</div>
+
+            </dd>
+        </dl>
+        <!--{/foreach}-->
+    </section>
+
+</div>
+
+<!--#include file="footer.html"-->

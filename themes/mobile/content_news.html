@@ -1,0 +1,38 @@
+<!--#include file="header.html"-->
+
+<img src="/assets/image/86.png" class="am-img-responsive am-center" alt="{$categoryInfo.name}" />
+
+<div class="news am-padding-horizontal-sm">
+
+    <p class="am-margin-vertical-sm am-text-xs am-link-muted"><a href="__ROOT__/">首页</a><!--foreach{$crumb as $vo}-->&gt;<a href="{$vo.url}">{$vo.name}</a><!--{/foreach}--></p>
+
+    <article class="artical-body">
+        <p class="am-text-center">{$contentInfo.title}</p>
+        <p class="am-text-center">时间：<time pubdate datetime="{date('Y-m-d',$vo.time)}">{date('Y-m-d',$contentInfo.time)}</time></p>
+        <div>{$contentInfo.content}</div>
+
+        <ul class="am-avg-md-1 am-padding-vertical-sm am-margin-top-sm preNext am-text-sm">
+            <li>
+                <div class="am-text-truncate"><span>上一篇：</span>
+                    <!--if{empty($prevInfo['aurl'])}-->
+                    <a class="am-link-muted ">暂无</a>
+                    <!--{else}-->
+                    <a href="{$prevInfo.aurl}" class="am-link-muted">{$prevInfo.title}</a>
+                    <!--{/if}-->
+                </div>
+            </li>
+            <li>
+                <div class="am-text-truncate"><span>下一篇：</span>
+                    <!--if{empty($nextInfo['aurl'])}-->
+                    <a class="am-link-muted">暂无</a>
+                    <!--{else}-->
+                    <a href="{$nextInfo.aurl}" class="am-link-muted">{$nextInfo.title}</a>
+                    <!--{/if}-->
+                </div>
+            </li>
+        </ul>
+    </article>
+
+</div>
+
+<!--#include file="footer.html"-->

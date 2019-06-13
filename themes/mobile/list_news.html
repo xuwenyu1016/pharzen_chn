@@ -1,0 +1,44 @@
+<!--#include file="header.html"-->
+
+<img src="/assets/image/86.png" class="am-img-responsive am-center" alt="{$categoryInfo.name}" />
+
+<div class="news am-padding-bottom-sm">
+    <p class="am-margin-vertical-sm am-text-xs am-link-muted am-padding-horizontal-sm"><a href="__ROOT__/">首页</a><!--foreach{$crumb as $vo}-->&gt;<a href="{$vo.url}">{$vo.name}</a><!--{/foreach}--></p>
+
+    <!--foreach{$condition as $vo}-->
+
+    <!--<div class="category-list-title">{$vo.name} <span class="am-icon-angle-down"></span></div>-->
+
+    <ul class="product-dropdown am-avg-sm-4 am-text-sm">
+        <li class="select-all <!--if{$vo.value==="all"}-->  selected <!--{/if}--> ">
+        <a href="{$vo.url}#main">全部</a>
+        </li>
+        <!--foreach{$vo.config as $v}-->
+        <li <!--if{$v.value == $v.i}--> class="selected" <!--{/if}--> >
+        <a href="{$v.url}#main">{$v.name}</a>
+        </li>
+        <!--{/foreach}-->
+    </ul>
+    <!--{/foreach}-->
+
+    <section class="am-margin-top-sm">
+        <!--foreach{$pageList as $vo}-->
+        <article>
+            <a href="{$vo.aurl}">
+                <div>
+                    <img src="{$vo.image}" alt="{$vo.title}" class="am-img-responisve" />
+                </div>
+
+                <div>
+                    <p class="">{$vo.title}</p>
+                    <time pubdate datetime="{date('Y-m-d',$vo.time)}">{date('Y-m-d',$vo.time)}</time>
+                </div>
+            </a>
+        </article>
+        <!--{/foreach}-->
+
+        <div class="pages">{$page}</div>
+    </section>
+</div>
+
+<!--#include file="footer.html"-->

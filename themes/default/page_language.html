@@ -1,0 +1,44 @@
+<!--#include file="header.html"-->
+
+<img src="/assets/image/104.png" class="am-img-responsive am-center" alt="{$categoryInfo.name}" />
+
+<div class="sum-languages am-padding-top-xl">
+    <div class="am-container">
+        <p class="am-margin-vertical-sm am-text-sm am-link-muted"><a href="__ROOT__/">首页</a><!--foreach{$crumb as $vo}-->&gt;<a href="{$vo.url}">{$vo.name}</a><!--{/foreach}--></p>
+
+        <div class="title-block">
+            <p><span>language</span></p>
+        </div>
+
+        <ul class="am-avg-sm-3 am-margin-top-xl">
+            <li>
+                <article>
+                    <a href="<?php echo $_SERVER['REQUEST_URI'] ?>">
+                        <img src="/assets/image/105.png" class="am-img-responsive am-center" alt="CHN" />
+                        <p class="am-text-center am-margin-vertical-sm">CHN</p>
+                    </a>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <a href="http://en.pharzen.com<?php echo $_SERVER['REQUEST_URI'] ?>">
+                        <img src="/assets/image/106.png" class="am-img-responsive am-center" alt="ENG" />
+                        <p class="am-text-center am-margin-vertical-sm">ENG</p>
+                    </a>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <a href="http://ru.pharzen.com<?php echo $_SERVER['REQUEST_URI'] ?>">
+                        <img src="/assets/image/107.png" class="am-img-responsive am-center" alt="RUS" />
+                        <p class="am-text-center am-margin-vertical-sm">RUS</p>
+                    </a>
+                </article>
+            </li>
+        </ul>
+    </div>
+    <img src="/assets/image/4.png" class="am-img-responsive am-center bottom-image" alt="{$categoryInfo.name}">
+</div>
+
+
+<!--#include file="footer.html"-->

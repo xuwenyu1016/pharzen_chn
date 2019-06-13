@@ -1,0 +1,56 @@
+<!--#include file="header.html"-->
+
+<img src="/assets/image/45.png" class="am-img-responsive am-center" alt="{$categoryInfo.name}" />
+
+<div class="news am-padding-top-xl">
+    <div class="am-container" id="main">
+        <p class="am-margin-vertical-sm am-text-sm am-link-muted"><a href="__ROOT__/">首页</a><!--foreach{$crumb as $vo}-->&gt;<a href="{$vo.url}">{$vo.name}</a><!--{/foreach}--></p>
+
+        <div class="title-block">
+            <p><span>news</span><span>新闻资讯</span></p>
+
+            <div>
+                <!--foreach{$condition as $vo}-->
+
+                <!--<div class="category-list-title">{$vo.name} <span class="am-icon-angle-down"></span></div>-->
+
+                <ul class="product-dropdown am-avg-sm-5">
+                    <li class="select-all <!--if{$vo.value==="all"}-->  selected <!--{/if}--> ">
+                        <a href="{$vo.url}#main">全部</a>
+                    </li>
+                    <!--foreach{$vo.config as $v}-->
+                    <li <!--if{$v.value == $v.i}--> class="selected" <!--{/if}--> >
+                        <a href="{$v.url}#main">{$v.name}</a>
+                    </li>
+                    <!--{/foreach}-->
+                </ul>
+                <!--{/foreach}-->
+            </div>
+        </div>
+
+        <section class="am-margin-top-lg">
+            <!--foreach{$pageList as $vo}-->
+            <article>
+                <a href="{$vo.aurl}">
+                    <div>
+                        <img src="{$vo.image}" alt="{$vo.title}" class="am-img-responisve" />
+                    </div>
+
+                    <div>
+                        <p class="am-text-truncate">{$vo.title}</p>
+                        <time pubdate datetime="{date('Y-m-d',$vo.time)}">{date('Y-m-d',$vo.time)}</time>
+                        <p>{$vo.description}</p>
+                        <span>查看详情</span>
+                    </div>
+                </a>
+            </article>
+            <!--{/foreach}-->
+
+            <div class="pages">{$page}</div>
+        </section>
+    </div>
+
+    <img src="/assets/image/4.png" class="am-img-responsive am-center bottom-image" alt="{$categoryInfo.name}">
+</div>
+
+<!--#include file="footer.html"-->

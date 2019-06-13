@@ -1,0 +1,23 @@
+<!--#include file="header.html"-->
+
+<img src="/assets/image/87.png" class="am-img-responsive am-center" alt="{$categoryInfo.name}" />
+
+<div class="system-list am-padding-horizontal-sm am-padding-bottom-sm">
+
+    <p class="am-margin-vertical-sm am-text-xs am-link-muted"><a href="__ROOT__/">首页</a><!--foreach{$crumb as $vo}-->&gt;<a href="{$vo.url}">{$vo.name}</a><!--{/foreach}--></p>
+
+    <h2 class="list-title">{$categoryInfo.name}</h2>
+    <p class="list-description am-margin-vertical-sm am-text-sm">为原料药企业提供成套设备和集成装置的机械设计、三维设计、系统开发与集成，提供定制化、模块化的设计、制造、装配和运行调试服务。</p>
+
+    <ul class="am-avg-sm-2 am-margin-top-sm system-list-blocks">
+        <!--foreach{$pageList as $vo}-->
+        <li>
+            <article style="background-image: url('{$vo.image}');">
+                <a href="{$vo.aurl}">{$vo.title}</a>
+            </article>
+        </li>
+        <!--{/foreach}-->
+    </ul>
+</div>
+
+<!--#include file="footer.html"-->

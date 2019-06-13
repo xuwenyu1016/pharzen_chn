@@ -1,0 +1,65 @@
+<!--#include file="header.html"-->
+
+<img src="/assets/image/45.png" class="am-img-responsive am-center" alt="{$categoryInfo.name}" />
+
+<div class="news am-padding-top-xl">
+    <div class="am-container">
+        <p class="am-margin-vertical-sm am-text-sm am-link-muted"><a href="__ROOT__/">首页</a><!--foreach{$crumb as $vo}-->&gt;<a href="{$vo.url}">{$vo.name}</a><!--{/foreach}--></p>
+
+        <div class="title-block">
+            <p><span>news</span><span>新闻资讯</span></p>
+        </div>
+
+        <main class="am-margin-top-lg">
+
+            <article>
+                <p class="am-text-center">{$contentInfo.title}</p>
+                <p class="am-text-center">时间：<time pubdate datetime="{date('Y-m-d',$vo.time)}">{date('Y-m-d',$contentInfo.time)}</time></p>
+                <div>{$contentInfo.content}</div>
+
+                <ul class="am-avg-md-2 am-padding-top-lg ">
+                    <li>
+                        <div class="am-text-truncate"><span>上一篇：</span>
+                            <!--if{empty($prevInfo['aurl'])}-->
+                            <a class="am-link-muted ">暂无</a>
+                            <!--{else}-->
+                            <a href="{$prevInfo.aurl}" class="am-link-muted">{$prevInfo.title}</a>
+                            <!--{/if}-->
+                        </div>
+                    </li>
+                    <li>
+
+                        <div class="am-text-truncate"><span>下一篇：</span>
+                            <!--if{empty($nextInfo['aurl'])}-->
+                            <a class="am-link-muted">暂无</a>
+                            <!--{else}-->
+                            <a href="{$nextInfo.aurl}" class="am-link-muted">{$nextInfo.title}</a>
+                            <!--{/if}-->
+                        </div>
+                    </li>
+                </ul>
+            </article>
+
+            <aside>
+                <p>热门文章</p>
+
+                <dl>
+                    <!--list{app="DuxCms" label="contentList" class_id=1 image="true" limit="3"}-->
+                    <dt>
+                        <a href="{$list.aurl}" title="{$list.title}">
+                            <div><img src="{$list.image}" class="am-img-responsive am-center" alt="{$list.title}" /></div>
+                            <p class="am-margin-vertical-sm">{$list.title}</p>
+                        </a>
+                    </dt>
+                    <!--{/list}-->
+                </dl>
+
+            </aside>
+
+        </main>
+    </div>
+
+    <img src="/assets/image/4.png" class="am-img-responsive am-center bottom-image" alt="{$categoryInfo.name}">
+</div>
+
+<!--#include file="footer.html"-->
